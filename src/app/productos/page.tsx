@@ -29,6 +29,7 @@ const productos = () => {
         { name: 'Real', image: '/assets/Cidras/real.png' },
         { name: 'Mistral', image: '/assets/Piscos/mistral.png' },
         { name: 'El Abuelo', image: '/assets/Piscos/elabuelo.png' },
+        
     ];
 
     const categories = [
