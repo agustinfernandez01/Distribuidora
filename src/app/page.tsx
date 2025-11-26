@@ -150,63 +150,23 @@ const BebidasLanding: React.FC = () => {
               Tu navegador no soporta el elemento de video.
             </video>
           </div>
-
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="mt-16 text-center animate-fadeInUp delay-200">
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-                Las mejores marcas de bebidas para tu negocio. Servicio confiable y entregas puntuales en Tucumán.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                  onClick={(e) => smoothScroll(e, 'marcas')}
-                  className="px-8 py-3 bg-[#2166b0] text-white hover:bg-[#1a5490] transition-all duration-300 text-sm font-medium transform hover:scale-105 hover:shadow-lg rounded"
-                >
-                  Ver Productos
-                </button>
-                <button
-                  onClick={(e) => smoothScroll(e, 'contacto')}
-                  className="px-8 py-3 border-2 border-[#2166b0] text-[#2166b0] hover:bg-[#2166b0] hover:text-white transition-all duration-300 text-sm font-medium transform hover:scale-105 rounded"
-                >
-                  Contacto
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Ubicaciones Section */}
-      <section className="py-16 bg-[#2166b0]">
+      <section className="py-2">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Tucumán */}
-            <div className="group relative overflow-hidden bg-white/5 backdrop-blur-sm border-2 border-white/20 p-10 hover:border-[#76c043] transition-all duration-300 hover:shadow-2xl hover:shadow-black/20 rounded-lg">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#76c043]/20 rounded-full blur-3xl group-hover:bg-[#76c043]/30 transition-all duration-300"></div>
-
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-white mb-6 tracking-wider">TUCUMÁN</h3>
-                <div className="space-y-3">
-                  <p className="text-lg text-white/90 hover:text-white transition-colors cursor-pointer flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#76c043]"></span>
-                    San Miguel de Tucumán
-                  </p>
-                </div>
-              </div>
+            <div className="text-center p-10 bg-[#2166b0]/5 hover:bg-[#2166b0]/10 transition-colors duration-300 rounded-lg">
+              <div className="text-3xl font-light text-[#2166b0] mb-1">TUCUMÁN</div>
+              <div className="text-xs text-gray-600">Islas Malvinas s/n - Colombres (4111) - Cruz Alta</div>
             </div>
 
             {/* Catamarca */}
-            <div className="group relative overflow-hidden bg-white/5 backdrop-blur-sm border-2 border-white/20 p-10 hover:border-[#76c043] transition-all duration-300 hover:shadow-2xl hover:shadow-black/20 rounded-lg">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#76c043]/20 rounded-full blur-3xl group-hover:bg-[#76c043]/30 transition-all duration-300"></div>
-
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-white mb-6 tracking-wider">CATAMARCA</h3>
-                <div className="space-y-3">
-                  <p className="text-lg text-white/90 hover:text-white transition-colors cursor-pointer flex items-center gap-3">
-                    <span className="w-2 h-2 rounded-full bg-[#76c043]"></span>
-                    San Fernando del Valle de Catamarca
-                  </p>
-                </div>
-              </div>
+            <div className="text-center p-10 bg-[#76c043]/5 hover:bg-[#76c043]/10 transition-colors duration-300 rounded-lg">
+              <div className="text-3xl font-light text-[#76c043] mb-1">CATAMARCA</div>
+              <div className="text-xs text-gray-600">Av A Villafañe 2121 - S.F Del Valle de Catamarca (4700)</div>
             </div>
           </div>
         </div>
@@ -242,8 +202,24 @@ const BebidasLanding: React.FC = () => {
                 <div className="absolute left-0 top-0 w-4 h-4 bg-[#2166b0] rounded-full transform -translate-x-[9px]"></div>
                 <div className="mb-2 text-sm font-medium text-[#2166b0]">2023 - Expansión al Norte</div>
                 <p className="text-gray-600 leading-relaxed">
-                  CCU en conjunto con ADO nos otorgaron la oportunidad de expandir nuestros negocios al norte argentino, tomando la distribución oficial de Tucumán y Catamarca. Así nace DISCOMEF SRL.
+                  CCU en conjunto con ADO nos otorgaron la oportunidad de expandir nuestros negocios al norte argentino, <span className='text-gray font-semibold'> tomando la distribución oficial de Tucumán y Catamarca. Así nace DISCOMEF SRL. </span>
                 </p>
+              </div>
+
+              {/* Estadísticas debajo de la línea de tiempo */}
+              <div className="grid grid-cols-3 gap-4 pt-6">
+                <div className="text-center p-4 bg-[#2166b0]/5 hover:bg-[#2166b0]/10 transition-colors duration-300 rounded-lg">
+                  <div className="text-3xl font-light text-[#2166b0] mb-1">65+</div>
+                  <div className="text-xs text-gray-600">Años de experiencia</div>
+                </div>
+                <div className="text-center p-4 bg-[#76c043]/5 hover:bg-[#76c043]/10 transition-colors duration-300 rounded-lg">
+                  <div className="text-3xl font-light text-[#76c043] mb-1">600+</div>
+                  <div className="text-xs text-gray-600">Colaboradores</div>
+                </div>
+                <div className="text-center p-4 bg-[#2166b0]/5 hover:bg-[#2166b0]/10 transition-colors duration-300 rounded-lg">
+                  <div className="text-3xl font-light text-[#2166b0] mb-1">3</div>
+                  <div className="text-xs text-gray-600">Centros de distribución</div>
+                </div>
               </div>
             </div>
 
@@ -261,31 +237,15 @@ const BebidasLanding: React.FC = () => {
               <div className="bg-gray-50 p-8 border border-gray-200 hover:border-[#76c043] transition-all duration-300 hover:shadow-lg rounded-lg">
                 <h3 className="text-2xl font-normal text-gray-900 mb-4">Inversión y Profesionalización</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Año tras año hemos invertido en tecnología, recursos humanos, flota de camiones y centros logísticos, profesionalizando todas nuestras áreas y formando equipos cada vez mejores para cumplir nuestros objetivos.
+                  Año tras año hemos invertido en tecnología, recursos humanos,
+                  flota de camiones y centros logísticos,
+                  profesionalizando todas nuestras áreas y formando equipos cada vez mejores para cumplir nuestros objetivos y la de nuestros proveedores. <br /><br />
+                  <span className='text-1xl font-normal text-gray-900 mb-4'>Grupo Distribuidor SERVIMAR - DISCOMEF</span><br />
+
+                  Actualmente conformamos un grupo con presencia en Buenos Aires, Tucumán y Catamarca, con 3 centros de distribución que nos posicionan como uno de los principales actores de distribución de consumo masivo a nivel nacional.
                 </p>
               </div>
-
-              <div className="grid grid-cols-3 gap-4">
-                <div className="text-center p-4 bg-[#2166b0]/5 hover:bg-[#2166b0]/10 transition-colors duration-300 rounded-lg">
-                  <div className="text-3xl font-light text-[#2166b0] mb-1">65+</div>
-                  <div className="text-xs text-gray-600">Años de experiencia</div>
-                </div>
-                <div className="text-center p-4 bg-[#76c043]/5 hover:bg-[#76c043]/10 transition-colors duration-300 rounded-lg">
-                  <div className="text-3xl font-light text-[#76c043] mb-1">600+</div>
-                  <div className="text-xs text-gray-600">Colaboradores</div>
-                </div>
-                <div className="text-center p-4 bg-[#2166b0]/5 hover:bg-[#2166b0]/10 transition-colors duration-300 rounded-lg">
-                  <div className="text-3xl font-light text-[#2166b0] mb-1">3</div>
-                  <div className="text-xs text-gray-600">Centros de distribución</div>
-                </div>
-              </div>
             </div>
-          </div>
-
-          <div className="mt-12 p-8 bg-gradient-to-r from-[#2166b0]/5 to-[#76c043]/5 border-l-4 border-[#2166b0] rounded-lg">
-            <p className="text-gray-700 leading-relaxed text-center lg:text-left">
-              Actualmente conformamos un grupo con presencia en Buenos Aires, Tucumán y Catamarca, con 3 centros de distribución que nos posicionan como uno de los principales actores de distribución de consumo masivo a nivel nacional.
-            </p>
           </div>
         </div>
       </section>
@@ -348,11 +308,10 @@ const BebidasLanding: React.FC = () => {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    currentSlide === index
-                      ? 'w-8 bg-[#2166b0]'
-                      : 'w-2 bg-gray-300 hover:bg-gray-400'
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${currentSlide === index
+                    ? 'w-8 bg-[#2166b0]'
+                    : 'w-2 bg-gray-300 hover:bg-gray-400'
+                    }`}
                   aria-label={`Ir a diapositiva ${index + 1}`}
                 />
               ))}
@@ -368,7 +327,7 @@ const BebidasLanding: React.FC = () => {
       </section>
 
       {/* CCU Partnership Section */}
-    <section id="ccu" className="py-20 px-6 lg:px-12 bg-white">
+      <section id="ccu" className="py-20 px-6 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -440,7 +399,7 @@ const BebidasLanding: React.FC = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-r from-[#76c043] to-[#2166b0] opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-300"></div>
                   <div className="relative bg-white p-8 border border-gray-200 group-hover:border-[#76c043] transition-all duration-300 hover:shadow-xl rounded-lg h-full flex items-center justify-center">
